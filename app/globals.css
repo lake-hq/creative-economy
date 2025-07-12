@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --dark: #0a0a0a;
+  --light: #ffffff;
+
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color1: #000000;
+  --primary: oklch(63.041% 0.2025 254.618);
+  font-size: small;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-dark: var(--dark);
+  --color-light: var(--light);
+  --color-color1: var(--color1);
+  --color-primary: var(--primary);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.Navbar {
+  @apply flex flex-row items-center justify-between w-full py-6 pb-4 px-60;
+  .navButton {
+    @apply text-foreground mx-6 py-4 font-semibold uppercase;
+  }
+  .navButton:hover {
+    @apply text-gray-300;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+section {
+  @apply h-full flex flex-col py-40 px-40;
+}
+
+h1 {
+  @apply font-bold text-6xl;
+}
+
+h2 {
+  @apply font-bold text-5xl;
+}
+
+h4 {
+  @apply text-3xl;
+}
+h6 {
+  @apply text-xl font-semibold;
+}
+
+p {
+  @apply text-lg;
+}
+
+.button1 {
+  @apply p-4 py-3 outline-2 outline-primary bg-primary rounded-sm text-white;
+}
+
+.button2 {
+  @apply p-4 py-3 outline-2 outline-gray-400 rounded-sm;
+}
+
+.button3 {
+  @apply p-4 py-3 outline-2 outline-white bg-white rounded-sm text-dark transition-all;
+  &:hover {
+    @apply text-light;
+  }
+}
+
+.card1 {
+  @apply flex flex-col justify-center items-baseline text-left bg-gray-100 m-3 px-4 py-12 rounded-xl transition-all;
+  h2 {
+    @apply text-primary font-semibold py-4;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+  p {
+    @apply text-gray-500 text-lg w-10/12;
+  }
+  &:hover {
+    @apply bg-primary;
+    h2,
+    h4 {
+      @apply text-foreground;
+    }
+    p {
+      @apply text-white;
+    }
+  }
+}
+
+.iconCard1 {
+  Image {
+    @apply outline-2 outline-gray-500 rounded-full p-8;
+  }
+  a {
+    @apply m-4 p-8 border-b-2 border-gray-500;
+  }
+}
