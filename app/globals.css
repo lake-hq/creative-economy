@@ -8,7 +8,7 @@
   --foreground: #171717;
 
   --color1: #000000;
-  --primary: oklch(63.041% 0.2025 254.618);
+  --primary: oklch(35.233% 0.00004 271.152);
   font-size: small;
 }
 
@@ -86,7 +86,7 @@ p {
 }
 
 .card1 {
-  @apply flex flex-col justify-center items-baseline text-left bg-gray-100 m-3 px-4 py-12 rounded-xl transition-all;
+  @apply flex flex-col justify-center items-baseline text-left bg-gray-100 px-4 py-12 rounded-xl transition-all;
   h2 {
     @apply text-primary font-semibold py-4;
   }

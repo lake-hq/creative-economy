@@ -1,10 +1,10 @@
-export default function InfoCard() {
+export default function InfoCard(props: any) {
   return (
     <div className="flex flex-col">
       <div className="card1">
-        <h2>+60</h2>
-        <h4>INVESTMENT PLANS</h4>
-        <p>Randomised words which</p>
+        <h2 className="uppercase">{props.metric}</h2>
+        <h4 className="uppercase">{props.title}</h4>
+        <p>{props.description}</p>
       </div>
     </div>
   );

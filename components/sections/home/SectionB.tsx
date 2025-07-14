@@ -1,4 +1,5 @@
 import Image from "next/image";
+import InfoCard from "@/components/cards/InfoCard";
 
 export default function SectionB() {
   return (
@@ -16,7 +17,7 @@ export default function SectionB() {
           there isn't anything.
         </p>
       </div>
-      <div className="flex flex-row justify-center items-center py-10">
+      <div className="flex flex-row gap-6 justify-center items-center py-10">
         <div className="mr-10">
           <Image
             src="/corporate-conf-img.png"
@@ -26,20 +27,30 @@ export default function SectionB() {
             className="w-2xl"
           />
         </div>
-        <div className="flex flex-col">
-          <div className="card1">
-            <h2>+60</h2>
-            <h4>INVESTMENT PLANS</h4>
-            <p>Randomised words which</p>
-          </div>
-          <div className="card1">
-            <h2>25M+</h2>
-            <h4>CUSTOMERS SERVED</h4>
-            <p>Necessary, making this the first</p>
-          </div>
+        <div className="flex flex-col gap-5">
+          <InfoCard
+            metric="+60"
+            title="INVESTMENT PLANS"
+            description="Randomised words which"
+          />
+          <InfoCard
+            metric="25M"
+            title="CUSTOMERS SERVED"
+            description="Necessary, making this the first"
+          />
         </div>
-        <div className="flex flex-col">
-          <div className="card1">
+        <div className="flex flex-col gap-5">
+          <InfoCard
+            metric="+60"
+            title="INVESTMENT PLANS"
+            description="Randomised words which"
+          />
+          <InfoCard
+            metric="25M"
+            title="CUSTOMERS SERVED"
+            description="Necessary, making this the first"
+          />
+          {/* <div className="card1">
             <h2>75B+</h2>
             <h4>EXCHANGE FUND</h4>
             <p>Necessary, making this the first</p>
@@ -48,7 +59,7 @@ export default function SectionB() {
             <h2>+120</h2>
             <h4>MEETINGS HELD</h4>
             <p>Lorem, ipsum dolor.</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
