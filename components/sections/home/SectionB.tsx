@@ -9,7 +9,7 @@ export default function SectionB() {
           We have <span className="text-primary">introduced</span> new business
           management standards
         </h2>
-        <p className="p-10 w-4xl">
+        <p className="p-10 max-w-4xl">
           There are many variations of passages of lorem ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -17,7 +17,7 @@ export default function SectionB() {
           there isn't anything.
         </p>
       </div>
-      <div className="flex flex-row gap-6 justify-center items-center py-10">
+      <div className="flex flex-col lg:flex-row gap-6 justify-center items-center py-10">
         <div className="mr-10">
           <Image
             src="/corporate-conf-img.png"
