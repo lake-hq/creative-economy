@@ -3,7 +3,7 @@ import InfoCard from "@/components/cards/InfoCard";
 
 export default function SectionB() {
   return (
-    <section className="bg-foreground text-dark text-center justify-center items-center">
+    <section className="section bright-section bg-foreground text-dark text-center justify-center items-center light-section">
       <div className="flex flex-col justify-center items-center w-5xl mt-10">
         <h2>
           We have <span className="text-primary">introduced</span> new business

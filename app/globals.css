@@ -2,13 +2,15 @@
 
 :root {
   --dark: #0a0a0a;
-  --light: #ffffff;
+  --less-dark: #242424c4;
+  --light: #eaeaea;
+  --less-light: #e7e7e7db;
 
   --background: #ffffff;
   --foreground: #171717;
 
-  --color1: #000000;
-  --primary: oklch(35.233% 0.00004 271.152);
+  --primary: #2982ff;
+  --primary-darker: #1661c9;
   font-size: small;
 }
 
@@ -17,12 +19,17 @@
   --color-foreground: var(--foreground);
 
   --color-dark: var(--dark);
+  --color-less-dark: var(--less-dark);
   --color-light: var(--light);
+  --color-less-light: var(--less-light);
   --color-color1: var(--color1);
+
   --color-primary: var(--primary);
+  --color-primary-darker: var(--primary-darker);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-quicksand: var(--font-quicksand);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,7 +45,7 @@
     @apply text-foreground mx-6 py-4 font-semibold uppercase;
   }
   .navButton:hover {
-    @apply text-gray-300;
+    @apply text-less-light;
   }
 }
 
@@ -48,15 +55,39 @@ body {
 }
 
 section {
-  @apply h-full flex flex-col py-40 px-40;
+  @apply flex flex-col;
+}
+
+.section {
+  @apply h-full py-40 px-40;
+}
+
+.bright-section {
+  h1,
+  h2 {
+    @apply text-dark;
+  }
+  p {
+    @apply text-less-dark;
+  }
+}
+
+.dark-section {
+  h1,
+  h2 {
+    @apply text-light;
+  }
+  p {
+    @apply text-less-light;
+  }
 }
 
 h1 {
-  @apply font-bold text-6xl;
+  @apply font-quicksand font-bold text-6xl;
 }
 
 h2 {
-  @apply font-bold text-5xl;
+  @apply font-quicksand font-semibold text-5xl;
 }
 
 h4 {
@@ -71,11 +102,15 @@ p {
 }
 
 .button1 {
-  @apply p-4 py-3 outline-2 outline-primary bg-primary rounded-sm text-white;
+  @apply p-4 py-3 bg-primary rounded-sm text-white;
+
+  &:hover {
+    @apply bg-primary-darker;
+  }
 }
 
 .button2 {
-  @apply p-4 py-3 outline-2 outline-gray-400 rounded-sm;
+  @apply p-4 py-3 outline-2 outline-gray-200 rounded-sm;
 }
 
 .button3 {
@@ -94,7 +129,7 @@ p {
     @apply text-2xl;
   }
   p {
-    @apply text-gray-500 text-lg w-10/12;
+    @apply text-less-dark text-lg w-10/12;
   }
   &:hover {
     @apply bg-primary;

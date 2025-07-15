@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SectionC() {
   return (
-    <section className="bg-light text-dark w-full">
+    <section className="section bright-section bg-white text-dark w-full">
       <div className="flex flex-col items-center">
         <div className="flex flex-row justify-center items-center">
           <div className="flex flex-col w-1/2 px-16">

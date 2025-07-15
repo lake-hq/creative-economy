@@ -13,6 +13,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const quickSand = Quicksand({
+  variable: "--font-quicksand",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Creative Economy BD",
   description: "",
@@ -24,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${quickSand.variable} antialiased`}
       >
         <Navbar></Navbar>
         {children}

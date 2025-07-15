@@ -2,9 +2,11 @@ import IconCard from "../../cards/IconCard";
 
 export default function SectionE() {
   return (
-    <section className="items-center justify-center text-center">
+    <section className="section dark-section items-center justify-center text-center">
       <div className="w-3xl">
-        <h6 className="text-gray-400">THERE ARE MANY VARIATIONS OF PASSAGES</h6>
+        <h6 className="text-less-light">
+          THERE ARE MANY VARIATIONS OF PASSAGES
+        </h6>
         <h2 className="my-4">
           We <span className="text-primary">guarantee</span> the security and
           protection of your deposits

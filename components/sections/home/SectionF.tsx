@@ -3,8 +3,8 @@ import IconCard2 from "../../cards/IconCard2";
 
 export default function SectionF() {
   return (
-    <section className="items-center justify-center text-center bg-light text-dark">
-      <h6 className="text-gray-500">THERE ARE MANY VARIATIONS OF PASSAGES</h6>
+    <section className="section bright-section items-center justify-center text-center bg-light text-dark">
+      <h6 className="text-less-dark">THERE ARE MANY VARIATIONS OF PASSAGES</h6>
       <h2 className="my-6 w-xl">
         All-in-one <span className="text-primary">mobile app</span> for managing
         your finances
