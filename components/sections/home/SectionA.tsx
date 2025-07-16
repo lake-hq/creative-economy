@@ -1,7 +1,7 @@
 export default function SectionA() {
   return (
     <section className="section dark-section xl:items-center">
-      <div className="max-w-xl xl:relative right-100">
+      <div className="max-w-xl xl:relative right-100 py-40 xl:py-32">
         <h1>We optimize and grow your business</h1>
         <p className="my-5">
           It is a long established fact that a reader will be distracted by the

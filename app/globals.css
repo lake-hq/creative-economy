@@ -14,10 +14,6 @@
   font-size: small;
 }
 
-section {
-  overflow: hidden;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -44,7 +40,7 @@ section {
 }
 
 .Navbar {
-  @apply flex flex-row items-center justify-between w-full py-6 pb-4 px-60;
+  @apply hidden md:flex flex-row items-center justify-between w-full py-6 pb-4 px-60;
   .navButton {
     @apply text-foreground mx-6 py-4 font-semibold uppercase;
   }
@@ -63,7 +59,7 @@ section {
 }
 
 .section {
-  @apply h-full py-40 px-8 md:px-40;
+  @apply h-full py-20 px-8 lg:px-20;
 }
 
 .bright-section {
@@ -125,7 +121,7 @@ p {
 }
 
 .card1 {
-  @apply flex flex-col justify-center items-baseline text-left bg-gray-100 px-4 py-12 rounded-xl transition-all;
+  @apply flex flex-col justify-center items-baseline text-left bg-gray-100 mx-1 px-4 py-12 rounded-xl lg:w-full transition-all;
   h2 {
     @apply text-primary font-semibold py-4;
   }
@@ -153,5 +149,11 @@ p {
   }
   a {
     @apply m-4 p-8 border-b-2 border-gray-500;
+  }
+}
+
+.featureBlock {
+  @apply flex flex-col md:flex-row justify-center items-center xl:gap-20;
+  div {
   }
 }

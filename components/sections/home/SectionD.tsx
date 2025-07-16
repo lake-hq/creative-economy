@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SectionD() {
   return (
     <section className="bg-primary section dark-section">
-      <div className="flex flex-row items-center justify-center">
+      <div className="flex flex-col lg:flex-row items-center justify-center">
         <div className="flex flex-col justify-center items-start">
           <h6 className="text-less-light">THERE ARE MANY VARIATIONS</h6>
           <h2 className="mt-6">

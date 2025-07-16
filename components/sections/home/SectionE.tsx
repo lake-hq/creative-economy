@@ -3,7 +3,7 @@ import IconCard from "../../cards/IconCard";
 export default function SectionE() {
   return (
     <section className="section dark-section items-center justify-center text-center">
-      <div className="w-3xl">
+      <div className="max-w-3xl">
         <h6 className="text-less-light">
           THERE ARE MANY VARIATIONS OF PASSAGES
         </h6>
@@ -12,7 +12,7 @@ export default function SectionE() {
           protection of your deposits
         </h2>
       </div>
-      <div className="flex flex-row justify-center items-baseline">
+      <div className="flex flex-col lg:flex-row justify-center items-baseline">
         <IconCard src="/corporate-safe-3.svg" title="Reliable saving">
           {" "}
           There are many variations of passages of lorem ipsum available, but
