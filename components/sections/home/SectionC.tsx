@@ -36,7 +36,7 @@ export default function SectionC() {
               />
             </div>
           </div>
-          <div className="featureBlock ">
+          <div className="featureBlock">
             <div className="max-w-1/2">
               <Image
                 src={"/corporate-credit-card.jpg"}
