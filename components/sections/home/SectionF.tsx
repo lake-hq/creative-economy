@@ -24,21 +24,23 @@ export default function SectionF() {
             the.
           </IconCard2>
         </div>
-        <div className="mx-4">
-          <Image
-            src="/corporate-mobile-app.png"
-            alt="mobile app"
-            width={240}
-            height={0}
-          />
-        </div>
-        <div>
-          <Image
-            src="/corporate-mobile-app-people.png"
-            alt="mobile app"
-            width={300}
-            height={0}
-          />
+        <div className="flex flex-col md:flex-row mt-24 gap-20 items-center justify-center">
+          <div>
+            <Image
+              src="/corporate-mobile-app.png"
+              alt="mobile app"
+              width={240}
+              height={0}
+            />
+          </div>
+          <div>
+            <Image
+              src="/corporate-mobile-app-people.png"
+              alt="mobile app"
+              width={300}
+              height={0}
+            />
+          </div>
         </div>
       </div>
     </section>
