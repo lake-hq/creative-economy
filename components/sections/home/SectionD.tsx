@@ -4,7 +4,7 @@ export default function SectionD() {
   return (
     <section className="bg-primary section dark-section">
       <div className="flex flex-col lg:flex-row items-center justify-center">
-        <div className="flex flex-col justify-center items-start">
+        <div className="flex flex-col justify-center items-start max-w-3xl">
           <h6 className="text-less-light">THERE ARE MANY VARIATIONS</h6>
           <h2 className="mt-6">
             Advantages of becoming a customer of our company.
@@ -62,7 +62,7 @@ export default function SectionD() {
             </a>
           </div>
         </div>
-        <div>
+        <div className=" max-w-4xl">
           <Image
             src="/corporate-laptop-img.png"
             alt="corporate laptop"
