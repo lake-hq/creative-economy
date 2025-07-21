@@ -9,7 +9,7 @@ export default function SectionF() {
         All-in-one <span className="text-primary">mobile app</span> for managing
         your finances
       </h2>
-      <div className="my-20 flex flex-col lg:flex-row items-center">
+      <div className=" flex flex-col lg:flex-row items-center">
         <div className="flex flex-col items-center justify-center">
           <IconCard2 src="corporate-safe-3.svg" title="Account management">
             Words, consectetur, from a lorem ipsum passage, and going through
@@ -24,7 +24,7 @@ export default function SectionF() {
             the.
           </IconCard2>
         </div>
-        <div className="flex flex-col md:flex-row mt-24 gap-20 items-center justify-center">
+        <div className="flex flex-col sm:flex-row mt-12 gap-20 items-center justify-center">
           <div>
             <Image
               src="/corporate-mobile-app.png"

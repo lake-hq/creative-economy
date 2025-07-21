@@ -110,13 +110,16 @@ p {
 }
 
 .button2 {
-  @apply p-4 py-3 outline-2 outline-gray-200 rounded-sm;
+  @apply p-4 py-3 outline-2 outline-less-light rounded-sm transition-all;
+  &:hover {
+    @apply bg-light outline-light text-dark;
+  }
 }
 
 .button3 {
   @apply p-4 py-3 outline-2 outline-white bg-white rounded-sm text-dark transition-all;
   &:hover {
-    @apply text-light;
+    @apply bg-less-light outline-less-light;
   }
 }
 
@@ -143,17 +146,15 @@ p {
   }
 }
 
-.iconCard1 {
+/* .iconCard1 {
   Image {
     @apply outline-2 outline-gray-500 rounded-full p-8;
   }
   a {
     @apply m-4 p-8 border-b-2 border-gray-500;
   }
-}
+} */
 
 .featureBlock {
-  @apply flex flex-col md:flex-row justify-center items-center xl:gap-20;
-  div {
-  }
+  @apply flex md:flex-row justify-center items-center xl:gap-4;
 }

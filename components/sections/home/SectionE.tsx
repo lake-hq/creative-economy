@@ -12,7 +12,7 @@ export default function SectionE() {
           protection of your deposits
         </h2>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-baseline">
+      <div className="flex flex-col lg:flex-row justify-center items-baseline gap-16 mt-12">
         <IconCard src="/corporate-safe-3.svg" title="Reliable saving">
           {" "}
           There are many variations of passages of lorem ipsum available, but

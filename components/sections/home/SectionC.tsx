@@ -5,8 +5,8 @@ export default function SectionC() {
     <section className="section bright-section bg-white text-dark w-full items-center">
       <div className="flex flex-col items-center justify-center xl:py-20 2xl:px-40">
         <div className="flex flex-col items-center gap-24">
-          <div className="featureBlock">
-            <div className="flex flex-col md:max-w-1/2 lg:max-w-3xl lg:px-20">
+          <div className="featureBlock flex-col">
+            <div className="flex flex-col md:max-w-1/2 lg:max-w-xl lg:px-20">
               <h2 className="py-8">
                 Software for greater{" "}
                 <span className="text-primary">efficiency</span> of your work
@@ -26,27 +26,27 @@ export default function SectionC() {
                 </a>
               </div>
             </div>
-            <div className="max-w-3xl md:max-w-1/2">
+            <div className="max-w-3xl md:max-w-xl">
               <Image
                 src={"/corporate-window-img.jpg"}
                 alt="corporate window"
                 width={800}
                 height={0}
-                className="w-full"
+                className=""
               />
             </div>
           </div>
-          <div className="featureBlock">
-            <div className="max-w-3xl md:max-w-1/2">
+          <div className="featureBlock flex-col-reverse">
+            <div className="max-w-3xl md:max-w-xl">
               <Image
                 src={"/corporate-credit-card.jpg"}
                 alt="corporate window"
                 width={800}
                 height={0}
-                className="w-full"
+                className=""
               />
             </div>
-            <div className="flex flex-col md:max-w-1/2 lg:max-w-3xl lg:px-20">
+            <div className="flex flex-col md:max-w-1/2 lg:max-w-xl lg:px-20">
               <h2 className="py-8">
                 Cryptocurrency <span className="text-primary">blockchain</span>{" "}
                 wallet

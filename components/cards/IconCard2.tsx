@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function IconCard2(x: any) {
   return (
-    <div className="w-md flex flex-row items-center justify-center my-3">
-      <div className="border-gray-300 border-2 rounded-full w-32 p-4 mb-2">
+    <div className="lg:w-md flex flex-row items-center justify-center my-3">
+      <div className="border-gray-300 border-2 rounded-full w-32 p-2 sm:p-4 mb-2">
         <Image src={x.src} alt="card" width={500} height={0} />
       </div>
       <div className="text-left mx-6">
