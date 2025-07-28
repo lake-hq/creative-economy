@@ -6,8 +6,8 @@
   --light: #eaeaea;
   --less-light: #e7e7e7db;
 
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+    --foreground: #ededed;
 
   --primary: #2982ff;
   --primary-darker: #1661c9;
@@ -30,13 +30,6 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-quicksand: var(--font-quicksand);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 @media (min-width: 1680px) {
