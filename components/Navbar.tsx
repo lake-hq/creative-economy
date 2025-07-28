@@ -11,7 +11,7 @@ export default function Navbar() {
         height={20}
         priority
       />
-      <div className="flex flex-row">
+      <div className="flex flex-row mx-4">
         <button className="navButton">Home</button>
         <button className="navButton">About</button>
         <button className="navButton">Blog</button>

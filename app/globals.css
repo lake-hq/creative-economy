@@ -39,8 +39,14 @@
   }
 }
 
+@media (min-width: 1680px) {
+  :root {
+    font-size: medium;
+  }
+}
+
 .Navbar {
-  @apply hidden md:flex flex-row items-center justify-between w-full py-6 pb-4 px-60;
+  @apply hidden sm:flex flex-row items-center justify-between w-full py-6 pb-4 px-12 xl:px-60;
   .navButton {
     @apply text-foreground mx-6 py-4 font-semibold uppercase;
   }
@@ -83,7 +89,7 @@ section {
 }
 
 h1 {
-  @apply font-quicksand font-bold text-6xl;
+  @apply font-quicksand font-bold text-5xl sm:text-6xl;
 }
 
 h2 {

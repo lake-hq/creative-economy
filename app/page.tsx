@@ -9,6 +9,7 @@ import SectionC from "@/components/sections/home/SectionC";
 import SectionD from "@/components/sections/home/SectionD";
 import SectionE from "@/components/sections/home/SectionE";
 import SectionF from "@/components/sections/home/SectionF";
+import SectionG from "@/components/sections/home/SectionG";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <SectionD />
       <SectionE />
       <SectionF />
+      <SectionG />
     </>
   );
 }
